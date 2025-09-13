@@ -37,8 +37,8 @@ matriz[2-1][2-1] = 1
 asientos_dispo = 0
 for f in range(len(matriz)):
     for c in range(len(matriz[f])):
-        if matriz[f][c] == 1:
+        if matriz[f][c] == 0:
             asientos_dispo += 1
 print(f"\nEl numero de asientos disponibles es: {asientos_dispo}\n")
 
-imprimir_matriz(matriz)    
+imprimir_matriz(matriz)
