@@ -18,9 +18,7 @@ print("Datos originales:\n", datos)
 indices_erroneos = []
 for f in range(datos.shape[0]):
     for c in range(datos.shape[1]):
-        if datos[f,c] < 0:
-            indices_erroneos.append(f)
-        elif datos[f,c] > 100:
+        if datos[f,c] < 0 or datos[f,c] > 100:
             indices_erroneos.append(f)
 
 datos_limpios = np.delete(datos, indices_erroneos, axis=0)
