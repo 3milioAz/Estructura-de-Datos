@@ -5,24 +5,6 @@ def input_entero_positivo(input_text):
         valor = input(input_text)
     return int(valor)
 
-#def input_entero(input_text):
-#    while True:
-#        valor = input(input_text)
-#        try:
-#            valor = int(valor)   # se convierte a entero
-#            break
-#        except ValueError:
-#            print("Error: Ingrese un número entero válido.")
-#    return valor
-
-#def input_enteros(input_text):
-#    while True:
-#        valores = input(input_text).split()
-#        try:
-#            return [int(v) for v in valores]  # convierte todos a int
-#        except ValueError:
-#            print("Error: Ingrese solo enteros válidos (positivos o negativos).")
-
 def input_enteros_cantidad(input_text, max_valores):
     while True:
         valores = input(input_text).split()
