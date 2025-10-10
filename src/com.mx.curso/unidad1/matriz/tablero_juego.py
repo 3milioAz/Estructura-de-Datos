@@ -1,11 +1,12 @@
 # Crear el tablero (matriz 5x5)
-tablero = [     # 0 = Nada, 1 = Obstaculo
+# 0 = Nada, 1 = Obstaculo
+tablero = [     
     [0,1,0,1,0],
     [0,1,1,0,0],
     [0,0,1,1,0],
     [0,0,1,1,1],
     [0,1,0,0,0]
-]
+] 
 
 # Mostrar el tablero en forma de matriz.
 for f in range(len(tablero)):
